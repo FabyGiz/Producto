@@ -23,7 +23,7 @@ public class Program
                 var name = Console.ReadLine();
                 Console.WriteLine("Indique la cantidad disponible");
                 var stock= Int32.Parse(Console.ReadLine());
-                Console.WriteLine();    
+                Console.WriteLine("Indique el precio");    
                 var price=Double.Parse(Console.ReadLine());
 
                 var myProduct = new Product() { Id = id, Name = name, Stock = stock, Price=price };
@@ -46,7 +46,7 @@ public class Program
                 break;
 
             default:
-                Console.WriteLine("Opcion incorrecta")
+                Console.WriteLine("Opcion incorrecta");
                 break;
 ;
 

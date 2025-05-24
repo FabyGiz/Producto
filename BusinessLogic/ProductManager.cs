@@ -1,4 +1,5 @@
 ﻿
+using DataPersistence1;
 using Entities;
 using System;
 using System.Collections.Generic;
@@ -11,12 +12,29 @@ namespace BusinessLogic {
     {
         public void AddProduct(Product product) 
         {  
-            if (product == null) throw new ArgumentNullException(nameof(product), "El producto no puede ser nulo");
-            if (string.IsNullOrWhiteSpace(product.Name)) throw new ArgumentException("El nombre del producto no puede estar vacio");
-            if (product.Price <= 0) throw new ArgumentException("El precio debe ser mayor a 0");
-            if (product.Stock < 0) throw new ArgumentException("El stock no puede ser negativo");
-        }
-    
+            //Aplicar validaciones
+            if(String.IsNullOrEmpty(product.Name)) 
+            {
+                throw new Exception("Nombre del producto no debe ser vacio");
+             }
+
+            if(product.Price <1)
+            {
+                throw new Exception("El precio debe ser mayor que cero");
+            }
+
+            if(product.Stock <1)
+            {
+                throw new Exception("La cantidad disponible de ber mayor que cero");
+            }
+
+            //Si pasa las validaciones enviamos  a guardar al txt
+
+            var fm = new FileManager();
+            fm.SaveProduct(product);
+
+             }
+
          public  List<Product> GetProducts() 
             { 
             var list=new List<Product>();

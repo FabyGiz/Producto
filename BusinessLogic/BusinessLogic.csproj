@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DataPersistence1\DataPersistence1.csproj" />
     <ProjectReference Include="..\Producto\Entities.csproj" />
   </ItemGroup>
 
