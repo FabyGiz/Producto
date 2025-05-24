@@ -6,6 +6,13 @@ using System.Threading.Tasks;
 
 namespace Entities
 {
+    //Objetos de tipo DTO
+    //Data transfer object
+    //POJOs Plain Old Java Objects
+    //Objetos que no tienen acciones, solo tienen atributos.
+
+
+
     public class Product: ProductBase
     {
         public double Price { get; set; }

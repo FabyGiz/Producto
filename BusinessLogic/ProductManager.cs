@@ -1,4 +1,6 @@
-﻿using System;
+﻿
+using Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,12 +13,16 @@ namespace BusinessLogic
         public void AddProduct() {
         
         }
+    
+    
+        public  List<Product> GetProducts() 
+            { 
+            var list=new List<Product>();
+            return list;
 
-        public void List<Product>()
-        {
-
-        }
-
-
+        
+            }
+    
+    
     }
 }
