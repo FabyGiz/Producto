@@ -10,6 +10,7 @@ public class Program
         Console.WriteLine("Digite la opcion deseada:");
         Console.WriteLine("1.Agregar un producto");
         Console.WriteLine("2.Consultar listado de productos");
+        Console.WriteLine("TEST");
 
 
         var option  = Int32.Parse(Console.ReadLine());
