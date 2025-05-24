@@ -1,13 +1,7 @@
-﻿namespace Entities
+﻿namespace BusinessLogic
 {
     public class Class1
     {
-
-
-
-
-
-
 
     }
 }
